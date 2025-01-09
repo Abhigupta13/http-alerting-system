@@ -33,7 +33,7 @@ async function monitorRequest(req, res) {
       // Trigger alert if the threshold is breached
       if (failures >= parseInt(process.env.THRESHOLD, 10)) {
         try {
-          await sendAlert("abhishek.akg13@gmail.com", ip);
+          await sendAlert(process.env.USER_EMAIL, ip);
           console.log(`Alert triggered for IP: ${ip}`);
         } catch (alertError) {
           console.error(`Failed to send alert: ${alertError.message}`);

@@ -1,5 +1,5 @@
-const FailedRequest = require("./models");
-const { sendAlert } = require("./alertService");
+const FailedRequest = require("../models/models");
+const { sendAlert } = require("../alertService");
 
 const failedRequests = new Map(); // In-memory tracking for quick threshold checks
 

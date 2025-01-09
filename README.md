@@ -1,5 +1,4 @@
-```markdown
-# Alerting System
+# HTTP Alerting System
 
 A Node.js-based alerting system for monitoring failed POST requests caused by invalid headers or incorrect access tokens. The system triggers email alerts when failed attempts from the same IP exceed a threshold.
 
